@@ -1,6 +1,5 @@
 services:
-  - type: static_site
+  - type: static
     name: 91proxy
-    env: static
     buildCommand: ""
     staticPublishPath: .
