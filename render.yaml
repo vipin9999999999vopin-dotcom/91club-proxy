@@ -1,8 +1,12 @@
 services:
-  - type: static_site
+  - type: web
     name: 91proxy
-    env: static
-    buildCommand: ""
-    staticPublishPath: .
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
     branch: main
     autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
