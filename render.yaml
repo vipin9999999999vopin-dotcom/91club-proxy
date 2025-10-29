@@ -1,0 +1,8 @@
+services:
+  - type: static_site
+    name: 91proxy
+    env: static
+    buildCommand: ""
+    staticPublishPath: .
+    branch: main
+    autoDeploy: true
